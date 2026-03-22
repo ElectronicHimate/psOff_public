@@ -425,7 +425,7 @@ void findPhysicalDevice(VkInstance instance, VkSurfaceKHR surface, SurfaceCapabi
 
     if (provVertex.provokingVertexLast != VK_TRUE) {
       LOG_ERR(L"provokingVertexLast is not supported");
-      skipDevice = true;
+      // skipDevice = true;
     }
 
     if (deviceFeatures.features.fragmentStoresAndAtomics != VK_TRUE) {
