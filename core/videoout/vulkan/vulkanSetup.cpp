@@ -393,7 +393,7 @@ void findPhysicalDevice(VkInstance instance, VkSurfaceKHR surface, SurfaceCapabi
 
     VkPhysicalDeviceColorWriteEnableFeaturesEXT colorWriteExt {
         .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COLOR_WRITE_ENABLE_FEATURES_EXT,
-        .pNext = &provVertex,
+        .pNext = nullptr,
     };
 
     VkPhysicalDeviceFeatures2 deviceFeatures {.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2, .pNext = &colorWriteExt};
