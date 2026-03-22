@@ -162,7 +162,7 @@ uint64_t allocAligned(uint64_t address, uint64_t size, int prot, uint64_t alignm
   LOG_USE_MODULE(memory);
 
   constexpr uint64_t USER_MIN = DIRECTMEM_START;
-  constexpr uint64_t USER_MAX = 0x3800000000ULL;
+  constexpr uint64_t USER_MAX = 0x3800000000;
 
   MEM_ADDRESS_REQUIREMENTS req2 {};
   MEM_EXTENDED_PARAMETER   param2 {};
