@@ -651,7 +651,7 @@ VkDevice createDevice(VkPhysicalDevice physicalDevice, VkSurfaceKHR surface, Vul
   VkPhysicalDeviceProvokingVertexFeaturesEXT provVertex {
       .sType               = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROVOKING_VERTEX_FEATURES_EXT,
       .pNext               = &descIndexing,
-      .provokingVertexLast = VK_TRUE,
+      .provokingVertexLast = VK_FALSE,
   };
 
   std::vector<const char*> reqLayers;
