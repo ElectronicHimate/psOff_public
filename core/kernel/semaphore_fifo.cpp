@@ -2,6 +2,7 @@
 #include "semaphore.h"
 #undef __APICALL_EXTERN
 
+#include <chrono>
 #include "logging.h"
 #include "modules_include/common.h"
 #include "pthread.h"
